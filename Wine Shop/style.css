@@ -1,0 +1,41 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: linear-gradient(rgb(0, 0, 0, 0), rgb(15, 16, 15)), url(image/homepage-1.jpg) no-repeat;
+    /* height: 100%;
+    background-size: contain; */
+    background-color: #103029;
+    background-repeat: no-repeat;
+}
+.search{
+    background: transparent;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+.non{
+    list-style: none;
+}
+.bb{
+    background-color: #103029;
+}
+.good{
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(12, 12, 12)), url(image/CAMPOGIOVANNI_hero-2040x1120-1.jpg);
+    background-size: cover;
+    height: 500px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.good:hover{
+    transform: scale(1.2);
+}
+.good:nth-child(2){
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(12, 12, 12)), url(image/DSC_6934-scaled.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.good:nth-child(3){
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(12, 12, 12)), url(image/bellaja_hero-2040x1120-1.jpg);
+    background-size: cover;
+    height: 500px;
+}
