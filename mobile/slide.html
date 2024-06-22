@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slide.css">
+</head>
+<body>
+   <div class="container">
+    <div class="slider">
+        <div class="slide active" style="background: url(iphone1.webp); background-size: cover;"></div>
+        <div class="slide" style="background: url(iphone-14-pro-max-tanitildi-iste-fiyati-ve-ozellikler.webp); background-size: cover;"></div>
+        <div class="slide" style="background: url(iphone-14-pro-max-tanitildi-iste-fiyati-ve-ozellikleri-destekapple.webp); background-size: cover;"></div>
+        <div class="slide" style="background: url(iphone-14-pro-max-tanitildi-iste-fiyati-ve-ozellikleri.webp); background-size: cover;"></div>
+       </div>
+       <div class="btn">
+           <button class="prev">Prev</button>
+           <button class="next">Next</button>
+       </div>
+   </div>
+
+    <script>
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        const prevbtn = document.querySelector(".prev");
+        const nextbtn = document.querySelector(".next");
+
+        let slideIndex = 0;
+
+        slides[slideIndex].classList.add('active');
+
+        // prevbtn.addEventListener('click', prevSlider);
+        nextbtn.addEventListener('click', nextSlider);
+
+        // function precSlider (){
+
+        // }
+        function nextSlider (){
+            slides[slideIndex].classList.remove("active");
+
+            slideIndex = (slideIndex === slides.length - 1) ? 0 : slideIndex + 1;
+            slides[slideIndex].classList.add('active');
+            slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+                };
+    
+    </script>
+</body>
+</html>

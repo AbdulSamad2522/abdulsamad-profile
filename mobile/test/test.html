@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+          <div class="slide active" style="background: url(iphone-14-pro-max-tanitildi-iste-fiyati-ve-ozellikler.webp); background-size: cover;"></div>
+          <div class="slide" style="background: url(iphone-14-pro-max-tanitildi-iste-fiyati-ve-ozellikleri.webp); background-size: cover;"></div>
+          <div class="slide" style="background: url(iPhone\ 14\ Pro\ and\ iPhone\ 14\ Pro\ Max.jpeg); background-size: cover;"></div>
+          <div class="slide" style="background: url(Four\ devices.jpeg); background-size: cover;"></div>
+        </div>
+        <div class="btn">
+            <a href="#" class="prevbtn"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#" class="nextbtn"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4aed11ef63.js" crossorigin="anonymous"></script>
+    <script>
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        const prev = document.querySelector(".prevbtn");
+        const next = document.querySelector(".nextbtn");
+
+        let slideIndex = 0;
+        
+        slides[slideIndex].classList.add("active");
+
+        next.addEventListener("click", right);
+
+        function right (){
+            slides[slideIndex].classList.remove("active");
+
+            slideIndex = (slideIndex === slides.length - 1) ? 0 : slideIndex + 1;
+            slides[slideIndex].classList.add("active");
+        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="part.css">
+</head>
+<body>
+    <header>
+        <h1>slider</h1>
+    </header>
+    <div class="container flex">
+        <div class="slider">
+            <div class="slide active" style="background: url(IMG_0178.jpg); background-repeat: cover;"></div>
+            <div class="slide" style="background: url(5F618227-5DC2-4FDC-820C-459E7FA3D279.jpg); background-repeat: cover;"></div>
+            <div class="slide" style="background: url(8D574940-5818-4AC1-9C2C-9EDE1B8F6010.jpg); background-repeat: cover;"></div>
+            <div class="slide" style="background: url(image2.jpg); background-repeat: cover;"></div>
+            <div class="slide" style="background: url(instagram\ \(24\)\ \(1\).jpg); background-repeat: cover;"></div>
+        </div>
+        <div class="btn flex">
+            <a href="#" class="prev"><i class="fa-solid fa-chevron-left"></i></a>
+            <h1>Click to Slide</h1>
+            <a href="#" class="next"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4aed11ef63.js" crossorigin="anonymous"></script>
+    <script>
+         
+         const slider = document.querySelector(".slider");
+         const slides = document.querySelectorAll(".slide");
+         const prevbtn = document.querySelector(".prev");
+         const nextbtn = document.querySelector(".next");
+
+         let slideIndex = 0;
+         slides[slideIndex].classList.add("active");
+
+         nextbtn.addEventListener("click", next);
+
+         function next (){
+         slides[slideIndex].classList.remove("active");
+
+         slideIndex = (slideIndex === slides.length - 1) ? 0 : slideIndex + 1;
+         slides[slideIndex].classList.add("active");
+         slider.style.transform = `translateX(-${slideIndex * 101}%)`;
+
+
+         };
+
+
+    </script>
+
+</body>
+</html>
