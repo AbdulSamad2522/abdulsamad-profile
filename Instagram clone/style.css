@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Major+Mono+Display&family=Poppins&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Major+Mono+Display&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&family=Lato:wght@300;400;700&display=swap');
+*{
+    font-family: 'Inter';
+    font-weight: 600;
+    background-color: #000;
+}
+.for{
+    border: 2px solid white;
+}
+.click{
+    cursor: pointer;
+}
+.no{
+    background-color: #000;
+    color: var(--primary);
+    border: none;
+    font-family: 'Roboto';
+    font-size: 0.8rem;
+}
+.no1{
+    background-color: #000;
+    color: var(--white);
+    border: none;
+    font-family: 'Roboto';
+    font-size: 0.7rem;
+}
+.flow{
+    overflow-x: auto;
+    min-width: 100%;
+}
+.flow::-webkit-scrollbar{
+    display: none;
+}
+.fix{
+    border-top: 1px solid #555;
+    position: fixed;
+    width: 104vw;
+    top: 94%;
+}
+.fix1{
+    border-bottom: 1px solid #555;
+    position: fixed;
+    width: 104vw;
+    top: -0.1%;
+    z-index: 3 !important;
+}
