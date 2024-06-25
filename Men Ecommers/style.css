@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&family=Lato:wght@300;400;700&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+    /* background-color: aliceblue; */
+}
+.go{
+    overflow-y: auto;
+    /* max-height: 400px; */
+    /* border: 2px solid ; */
+    flex-wrap: nowrap;
+    /* gap: 12px; */
+}
+.go::-webkit-scrollbar{
+    width: 0;
+}
+/* .fuck{
+    background: url(image/p12.jpg) no-repeat;
+    background-size: cover;
+}
+.duck{
+    background: url(image/p13.jpg) no-repeat;
+    background-size: cover;
+
+}
+.buck{
+    background: url(image/p14.jpg) no-repeat;
+    background-size: cover;
+  
+}
+.muck{
+    background: url(image/p15.jpg) no-repeat;
+    background-size: cover;
+} */
+.ko{
+    height: 650px;
+}
+.kolo{
+    height: 150px;
+}
+.for{
+    /* border: 5px solid rgb(1, 1, 1); */
+    border-bottom: 1px solid gray !important;
+}
