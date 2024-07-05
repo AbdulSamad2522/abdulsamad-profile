@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #313132;
+        }
+        .col{
+            background: #474343;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .signup-box {
+            width: 100%;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+            transition: background 0.3s ease;
+        }
+        
+        .input-group input:focus {
+            background: #e9e9e9;
+            outline: none;
+        }
+        
+        .input-group label {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transition: all 0.3s ease;
+            color: #999;
+        }
+        
+        .input-group input:focus + label,
+        .input-group input:valid + label {
+            top: -10px;
+            left: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #5cb85c;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        button:hover {
+            background: #4cae4c;
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .login-link a {
+            color: #5cb85c;
+            text-decoration: none;
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+        
+            .input-group input {
+                padding: 8px;
+            }
+        
+            button {
+                padding: 8px;
+                font-size: 14px;
+            }
+        
+            .login-link {
+                font-size: 12px;
+            }
+        }
+        
+        </style>
+    <div class="container" id="container">
+        <div class="signup-box">
+            <h2>Create Account</h2>
+            <form>
+                <div class="input-group" style="display: block;">
+                    <input type="text" required id="username">
+                    <label>Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required id="email">
+                    <label>Email</label>
+                </div>
+                <div class="input-group" >
+                    <input type="password" required id="pass1">
+                    <label>Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required id="pass2">
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" id="button">Sign Up</button>
+                <p class="login-link">Already have an account? <a href="#">Login here</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementsByTagName("button").addEventListener("click", sign);
+        function sign(){
+            document.getElementsById("button").style.color = "green";
+        }
+    </script>
+</body>
+
+
+</html>

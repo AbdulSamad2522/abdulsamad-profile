@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+*{
+    font-family: "Montserrat";
+}
+html{
+    scroll-behavior: smooth;
+}
+.bro{
+    border: 1px solid;
+}
+.sool{
+    padding: 5px 45px ;
+}
+.sool1{
+    padding: 3px 49px ;
+
+}
+.slide{
+    background-color: #000;
+    color: #fff;
+    height: 20px;
+    overflow-y: hidden;
+    text-wrap: nowrap;
+    transition: 1s;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.whatsapp{
+    position: fixed;
+    right: 16px;
+    cursor: pointer;
+    bottom: 36px;
+    z-index: 99;
+width: 50px;
+/* border: 1px solid #000; */
+}
+.btm-menu{
+    font-family:"Lato";
+    background-color: #fff;
+    height: 45px;
+    line-height: 19px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 101;
+}
+.tota{
+    color: #5555557c;
+    /* font-size: 1rem; */
+    font-weight: 600;
+    font-family: "poppins";
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tota:hover{
+    color: #333;
+}   
+.zoom{
+    transition: 0.5s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+}
+.col-3 .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3161_719647cd-d440-4969-8f36-8ffcb6ce7ec1.jpg?v=1719568784&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3158.jpg?v=1719568784&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.col-3:nth-child(2) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0411.jpg?v=1719568729&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.col-3:nth-child(2) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0424.jpg?v=1719568778&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.col-3:nth-child(3) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_1318.jpg?v=1719568774&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.col-3:nth-child(3) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_1344.jpg?v=1719568774&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.col-3:nth-child(4) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0304.jpg?v=1719568771&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.col-3:nth-child(4) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0309.jpg?v=1719568771&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item2 .row .col-3 .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0784.jpg?v=1719568820&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item2 .row .col-3 .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0791.jpg?v=1719568820&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item2 .row .col-3:nth-child(2) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_2756.jpg?v=1719568838&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item2 .row .col-3:nth-child(2) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_2763.jpg?v=1719568838&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item2 .row .col-3:nth-child(3) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3497.jpg?v=1719568413&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item2 .row .col-3:nth-child(3) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3550_64b9ee75-b894-444f-a3e8-df8fe0e759d0.jpg?v=1719568885&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item2 .row .col-3:nth-child(4) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_9835.jpg?v=1719568428&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item2 .row .col-3:nth-child(4) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_9857.jpg?v=1719568889&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------------------------- */
+.item3 .row .col-3 .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0784.jpg?v=1719568820&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item3 .row .col-3 .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0791.jpg?v=1719568820&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item3 .row .col-3:nth-child(2) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_2756.jpg?v=1719568838&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item3 .row .col-3:nth-child(2) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_2763.jpg?v=1719568838&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item3 .row .col-3:nth-child(3) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3497.jpg?v=1719568413&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item3 .row .col-3:nth-child(3) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3550_64b9ee75-b894-444f-a3e8-df8fe0e759d0.jpg?v=1719568885&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item3 .row .col-3:nth-child(4) .card .img{
+    height: 70vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_9835.jpg?v=1719568428&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item3 .row .col-3:nth-child(4) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_9857.jpg?v=1719568889&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.col-6 .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3161_719647cd-d440-4969-8f36-8ffcb6ce7ec1.jpg?v=1719568784&width=600);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3158.jpg?v=1719568784&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.col-6:nth-child(2) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0411.jpg?v=1719568729&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.col-6:nth-child(2) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0424.jpg?v=1719568778&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.col-6:nth-child(3) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_1318.jpg?v=1719568774&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.col-6:nth-child(3) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_1344.jpg?v=1719568774&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.col-6:nth-child(4) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0304.jpg?v=1719568771&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.col-6:nth-child(4) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0309.jpg?v=1719568771&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item2 .row .col-6 .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0784.jpg?v=1719568820&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item2 .row .col-6 .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0791.jpg?v=1719568820&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item2 .row .col-6:nth-child(2) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_2756.jpg?v=1719568838&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item2 .row .col-6:nth-child(2) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_2763.jpg?v=1719568838&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item2 .row .col-6:nth-child(3) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3497.jpg?v=1719568413&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item2 .row .col-6:nth-child(3) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3550_64b9ee75-b894-444f-a3e8-df8fe0e759d0.jpg?v=1719568885&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item2 .row .col-6:nth-child(4) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_9835.jpg?v=1719568428&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item2 .row .col-6:nth-child(4) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_9857.jpg?v=1719568889&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------------------------- */
+.item3 .row .col-6 .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0784.jpg?v=1719568820&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item3 .row .col-6 .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_0791.jpg?v=1719568820&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item3 .row .col-6:nth-child(2) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_2756.jpg?v=1719568838&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item3 .row .col-6:nth-child(2) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_2763.jpg?v=1719568838&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item3 .row .col-6:nth-child(3) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3497.jpg?v=1719568413&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item3 .row .col-6:nth-child(3) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_3550_64b9ee75-b894-444f-a3e8-df8fe0e759d0.jpg?v=1719568885&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.item3 .row .col-6:nth-child(4) .card .img{
+    height: 40vh;
+    background: url(https://asimjofa.com/cdn/shop/files/MG_9835.jpg?v=1719568428&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.item3 .row .col-6:nth-child(4) .card .img:hover{
+    background: url(https://asimjofa.com/cdn/shop/files/MG_9857.jpg?v=1719568889&width=600);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+.cssbuttons-io {
+    position: relative;
+    font-family: "poppins" !important;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+  }
+  
+  /* .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  } */
+  
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding:  0.4em 0.6em;
+  }
+  
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .cssbuttons-io::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .cssbuttons-io:active {
+    transform: scale(0.95);
+  }
+  
