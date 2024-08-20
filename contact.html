@@ -131,7 +131,7 @@
                                     Your message was sent successfully.
                                 </div>
                                 <div class="input-group">
-                                    <input type="text" name="full-name" id="full-name" placeholder="Name *">
+                                    <input type="text" name="full-name" id="name" placeholder="Name *">
                                 </div>
                                 <div class="input-group">
                                     <input type="email" name="email" id="email" placeholder="Email *">
@@ -181,7 +181,7 @@
         event.preventDefault();
 
         let params = {
-            name: document.getElementById("full-name").value,
+            name: document.getElementById("name").value,
             email: document.getElementById("email").value,
             subject: document.getElementById("subject").value,
             message: document.getElementById("message").value
@@ -192,7 +192,7 @@
 
         emailjs.send(serviceID, templateID, params)
         .then((res) => {
-            document.getElementById("full-name").value = "";
+            document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("subject").value = "";
             document.getElementById("message").value = "";
