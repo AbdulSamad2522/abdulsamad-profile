@@ -23,6 +23,16 @@
     <link rel="stylesheet" href="assets/css/aos.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Af_Bz7NpYBzkIJMMk",
+      });
+   })();
+    </script>
 </head>
 <body>
 
@@ -165,25 +175,26 @@
         </footer>
 
     </main>
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "Af_Bz7NpYBzkIJMMk",
-      });
-   })();
-</script>
+
 <script>
     function sendmail(){
         let parms = {
-            name : documnet.getElementById("full-name").value
-            ,email : document.getElementById("email").value
-            ,subject : documnet.getElementById("subject").value
-            ,messgae : documnet.getElementById("message").value
+            name : documnet.getElementById("full-name").value,
+            email : document.getElementById("email").value,
+            subject : documnet.getElementById("subject").value,
+            messgae : documnet.getElementById("message").value
         }
-        emailjs.send("service_9ord0lr","template_h7an2kc",parms).then(alert("Your message was sent successfully."))
+        const service = "service_9ord0lr"
+        const template = "template_h7an2kc"
+        emailjs.send(sercice, template, parms).then((res) => {
+            document.getElementById("full-name").value = ""
+            document.getElementById("email").value = ""
+            document.getElementById("subject").value = ""
+            document.getElementById("message").value = ""
+            console.log(res)
+            alert("Your Message Sent Successfully.")
+        });
+        .catch(err=>console.log(err))
     }
 </script>
     <script src="assets/js/jquery-3.6.4.js"></script>
