@@ -7,8 +7,8 @@
     <meta property="org:image" itemprop="image" content="assets/images/thumbnail.jpeg">
     <meta proprety="og:image:width" content="300">
     <meta proprety="og:image:height" content="300">
-    <meta property="org:title" content="AbdulSamad Protfolio">
-    <meta property="org:description" content="Web Developer & Designer | Create Website for your business with Ui/Ux Design.">
+    <meta property="og:title" content="AbdulSamad Protfolio">
+    <meta property="og:description" content="Web Developer & Designer | Create Website for your business with Ui/Ux Design.">
     <title>AbdulSamad Protfolio</title>
 
     <!-- Fonts -->
@@ -126,7 +126,7 @@
                             <img src="assets/images/bg1.png" alt="BG" class="bg-img">
                             <img src="assets/images/icon3.png" alt="Icon">
                             <h1>Let’s work <span>together.</span></h1>
-                            <form method="POST" action="">
+                            <form method="POST" onsubmit="sendmail(event)">
                                 <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
                                     Your message was sent successfully.
                                 </div>
@@ -177,24 +177,28 @@
     </main>
 
 <script>
-    function sendmail(){
-        let parms = {
-            name : documnet.getElementById("full-name").value,
-            email : document.getElementById("email").value,
-            subject : documnet.getElementById("subject").value,
-            messgae : documnet.getElementById("message").value
+     function sendmail(event){
+        event.preventDefault();
+
+        let params = {
+            name: document.getElementById("full-name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
         }
-        const service = "service_9ord0lr"
-        const template = "template_h7an2kc"
-        emailjs.send(sercice, template, parms).then((res) => {
-            document.getElementById("full-name").value = ""
-            document.getElementById("email").value = ""
-            document.getElementById("subject").value = ""
-            document.getElementById("message").value = ""
-            console.log(res)
-            alert("Your Message Sent Successfully.")
-        });
-        .catch(err=>console.log(err))
+
+        const serviceID = "service_9ord0lr";
+        const templateID = "template_h7an2kc";
+
+        emailjs.send(serviceID, templateID, params)
+        .then((res) => {
+            document.getElementById("full-name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            alert("Your Message Sent Successfully.");
+        })
+        .catch(err => console.log(err));
     }
 </script>
     <script src="assets/js/jquery-3.6.4.js"></script>
