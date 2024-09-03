@@ -469,7 +469,18 @@ ol {
 .header-area .show-menu.active span:nth-child(2) {
     transform: scale(0);
 }
-
+.Preview{
+    background: rgb(83, 163, 76);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s all;
+    }
+.Preview:hover{
+    background: rgb(66, 130, 60);
+    color:aliceblue;
+}
 
 
 /* # About */
